@@ -62,21 +62,21 @@ MCP2515 CAN;
 
 void setup()
 {
-   // Initialize the serial port and display PWF header
-   Serial.begin(115200);
-   Serial.println(F("Playing With Fusion: MCP2515 CAN Shield"));
-   
-   // Initialize the Playing With Fusion MCP 2515 CAN shield
-   // Pin 9 is SPI chip select, pin 2 is used for the MCP2515 interrupt line
-   CAN.begin(CS_CAN, INT_CAN, false, 500);  //500kbps
-   
+  // Initialize the serial port and display PWF header
+  Serial.begin(115200);
+  Serial.println(F("Playing With Fusion: MCP2515 CAN Shield"));
+  
+  // Initialize the Playing With Fusion MCP 2515 CAN shield
+  // Pin 9 is SPI chip select, pin 2 is used for the MCP2515 interrupt line
+  CAN.begin(CS_CAN, INT_CAN, false, 500);  //500kbps
+  
 
-   // Turn on both shield LEDs
-   pinMode(LED1, OUTPUT);
-   digitalWrite(LED1, HIGH);
+  // Turn on both shield LEDs
+  pinMode(LED1, OUTPUT);
+  digitalWrite(LED1, HIGH);
 
-   pinMode(LED2, OUTPUT);
-   digitalWrite(LED2, HIGH);
+  pinMode(LED2, OUTPUT);
+  digitalWrite(LED2, HIGH);
 }
 
 
